@@ -23,7 +23,7 @@ export default class RangeCollection {
 
   static validateRange(range: RangeType) {
     invariant(Array.isArray(range), 'Range should be an array')
-    invariant(range.length === 2, 'Range should be contain 2 elements')
+    invariant(range.length === 2, 'Range should contain 2 elements')
 
     const [start, end] = range
 
