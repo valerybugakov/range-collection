@@ -28,7 +28,7 @@ export default class RangeCollection {
     const [start, end] = range
 
     invariant(range.every(Number.isInteger), 'Range elemnts should be integers')
-    invariant(start <= end, 'Range start should lower or equal to range end')
+    invariant(start <= end, 'Range start should be lower or equal to range end')
   }
 
   constructor() {
