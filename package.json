@@ -7,9 +7,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "start": "babel-node ./example.js",
     "lint": "eslint . && flow",
-    "test": "jest"
+    "test": "jest",
+    "start:mine": "babel-node ./src/minesweeper.js ./src/__tests__/minefield.txt"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",

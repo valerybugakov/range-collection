@@ -1,12 +1,8 @@
 // @flow
+import { invariant } from './utils'
+
 type RangeType = [number, number]
 type RangesType = Array<RangeType>
-
-function invariant(condition, message) {
-  if (!condition) {
-    throw new Error(message)
-  }
-}
 
 export default class RangeCollection {
   ranges: RangesType;
